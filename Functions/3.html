@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 3</title>
+  <style>
+    body {
+      background-color: rgb(18, 18, 18);
+      text-align: center;
+      margin-top: 10%;
+    }
+
+    h1, h2, p, a {
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+      gap: 5%;
+    }
+
+    button {
+      color: white;
+      background-color: rgb(111, 110, 110);
+      border: none;
+      border-radius: 5px;
+      width: 7%;
+      height: 5%;
+      margin-right: 10px;
+      margin-top: 20px;
+      padding: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>JavaScript Functions</h1>
+  <p>Usando uma função como uma variável:</p>
+
+  <p id="demo"></p>
+
+  <script>
+    let text = "A temperatura é " + toCelsius(77) + " Celsius.";
+    document.getElementById("demo").innerHTML = text;
+
+    function toCelsius(fahrenheit) {
+      return (5 / 9) * (fahrenheit - 32);
+    } 
+  </script>
+
+</body>
+
+</html>

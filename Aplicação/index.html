@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações</title>
+    <style>
+        body {
+          background-color: rgb(18, 18, 18);
+          text-align: center;
+          margin-top: 10%;
+        }
+    
+        h1, h2, p, a {
+          color: white;
+          font-family: Arial, Helvetica, sans-serif;
+          text-decoration: none;
+          gap: 5%;
+        }
+    
+        button {
+          color: white;
+          background-color: rgb(79, 79, 79);
+          border: none;
+          border-radius: 5px;
+          width: 7%;
+          height: 5%;
+          margin-right: 10px;
+          margin-top: 20px;
+          padding: 8px;
+        }
+      </style>
+</head>
+
+<body>
+    <h2>Seu Carro</h2>
+
+    <p id="demo"></p>
+
+    <button onclick="clicou()">Informar</button>
+
+    <script>
+        function clicou() {
+            let marca = window.prompt('Digite a marca do seu carro ');
+            let modelo = window.prompt('Digite a modelo do seu carro ');
+            let cor = window.prompt('Digite a cor do seu carro ');
+            let placa = window.prompt('Digite a placa do seu carro ');
+            let carro = { type: marca, model: modelo, color: cor, plate: placa };
+            document.getElementById("demo").innerHTML = "Marca: " + carro.type +
+             " Modelo: " + carro.model +
+             " Cor: " + carro.color +
+             " Placa: " + carro.plate;
+        }
+    </script>
+</body>
+
+</html>

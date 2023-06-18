@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+    <style>
+        body {
+          background-color: rgb(18, 18, 18);
+          text-align: center;
+          margin-top: 10%;
+        }
+    
+        h1, h2, p, a {
+          color: white;
+          font-family: Arial, Helvetica, sans-serif;
+          text-decoration: none;
+          gap: 5%;
+        }
+    
+        button {
+          color: white;
+          background-color: rgb(111, 110, 110);
+          border: none;
+          border-radius: 5px;
+          width: 7%;
+          height: 5%;
+          margin-right: 10px;
+          margin-top: 20px;
+          padding: 8px;
+        }
+      </style>
+</head>
+
+<body>
+    <h1>Arrays em JavaScript</h1>
+    <h2>O Método forEach()</h2>
+
+    <p>O forEach() chama uma função para cada elemento em um array:</p>
+
+    <p>Calcule a soma dos valores em um array:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let soma = 0;
+        const numeros = [65, 44, 12, 4];
+        numeros.forEach(minhaFuncao);
+
+        document.getElementById("demo").innerHTML = soma;
+
+        function minhaFuncao(item) {
+            soma += item;
+        }
+    </script>
+</body>
+
+</html>
